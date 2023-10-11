@@ -2728,7 +2728,7 @@ main.-menuSidebarMargin {
   display: flex;
   align-items: center;
   height: 60px;
-  color: white;
+  color: #fff;
   font-size: 16px;
   line-height: 1;
 }
@@ -2853,6 +2853,10 @@ main.-menuSidebarMargin {
 @media (max-width: 1199px) {
   .header.-type-6 .header__menuBtn {
     display: flex;
+  }
+  .headerMenu__item {
+    color: #000;
+    margin-left: 0;
   }
 }
 
@@ -11628,11 +11632,14 @@ body.is-cursor-active * {
   transition: 0.15s;
 }
 
+
+
 @media (max-width: 575px) {
   .requestForm__close button {
     width: 64px;
     height: 64px;
   }
+
 }
 
 .requestForm__close button:hover {
