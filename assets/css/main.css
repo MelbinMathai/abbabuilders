@@ -107,7 +107,7 @@
   --text-24: 24px;
   --text-30: 30px;
   --text-36: 36px;
-  --text-38: 38px;
+  --text-38: 30px;
   --text-40: 40px;
   --text-44: 44px;
   --text-55: 55px;
@@ -4293,8 +4293,12 @@ main.-menuSidebarMargin {
 
 @media (max-width: 767px) {
   .hero.-type-8 .hero__content {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding: 0;
+  }
+  .hero .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -4358,7 +4362,7 @@ main.-menuSidebarMargin {
 
 @media (max-width: 575px) {
   .hero.-type-8 .hero__title {
-    font-size: 44px;
+    font-size: 30px;
   }
 }
 
