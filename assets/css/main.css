@@ -4369,17 +4369,17 @@ main.-menuSidebarMargin {
 }
 
 .hero.-type-8 .hero__title {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 500;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .hero-title-all {
   display: inline-block;
   padding: 20px 50px;
   border-radius: 25px;
-  background: rgb(0 0 0 / 35%);
+  background: rgb(0 0 0 / 45%);
 }
 
 @media (max-width: 1199px) {
@@ -5510,6 +5510,9 @@ main.-menuSidebarMargin {
   line-height: 40px;
   margin-bottom: 25px;
 }
+.testimonial-slider .owl-dots{
+    bottom: -30px;
+}
 
 @media (max-width: 767px) {
   .testimonials.-type-1 .testimonials__text {
@@ -6062,9 +6065,11 @@ main.-menuSidebarMargin {
 .footer.-type-1 .footer__number {
   color: var(--color-accent-1);
   font-family: Jost;
-  font-size: 62px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 76px;
+  line-height: 2;
+  margin-top: 30px;
   letter-spacing: 2.5px;
 }
 
@@ -11902,6 +11907,7 @@ body.is-cursor-active * {
 .btn-whatsapp-pulse-border {
   bottom: 30px;
   right: 20px;
+  z-index: 1001;
   animation-play-state: paused;
 }
 
@@ -11935,5 +11941,93 @@ body.is-cursor-active * {
 .btn-whatsapp-pulse img {
   top: 16px;
   left: 17px;
+  width: 40px;
   position: absolute;
+}
+.owl-carousel .owl-item .hero__text li img {
+  width: 22px;
+  margin-right: 15px;
+}
+
+.hero__text li {
+  padding: 2px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title-all {
+  width: 50%;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: end;
+}
+
+.hero__text .button {
+  color: #000;
+  background-color: #fff;
+}
+.hero__text .button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.broucher-btn button {
+  margin: 0 auto;
+}
+.broucher-btn img {
+  width:  25px;
+  margin-right: 10px;
+}
+
+
+@media (max-width: 992px) {
+  .hero.-type-8 .hero__title {
+    font-size: 28px;
+  }
+  .hero__text li {
+    font-size: 16px;
+    padding: 0;
+  }
+  .hero-title-all {
+    width: 100%;
+  }
+  .layout-pt-lg .text-62 {
+    font-size: 40px !important;
+  }
+  .text-62 br {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .item {
+    height: 100vh;
+  }
+  .banner_anim .container-fluid.relative {
+    bottom: 65px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title-all {
+    padding: 20px;
+  }
+  .hero.-type-8 .hero__title {
+    font-size: 25px;
+  }
+  .hero__content .button.-md {
+    padding: 10px 30px;
+    min-width: 100%;
+    margin-top: 25px !important;
+  }
+  .footer.-type-1 .footer__number {
+    padding: 0 10px;
+  }
+  .layout-pt-lg .text-62 {
+    font-size: 30px !important;
+  }
 }
